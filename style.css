@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Siemreap&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Siemreap&display=swap');
 
 *,
 ::after,
@@ -15,6 +15,7 @@ html {
 
 body {
     font-size: 16px;
+    font-family: "Open Sans", "Siemreap", serif;
 }
 
 :root {
@@ -49,7 +50,7 @@ i {
 }
 
 .container-width {
-    max-width: 75%;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -68,7 +69,40 @@ header {
     display: none;
 }
 
+.menu-destop {
+    display: none;
+}
+
+.mobile {
+    display: block;
+    background-color: black;
+    padding: 5px 10px;
+}
+
+.mobile>ul {
+    max-width: 54%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile>ul>li>img {
+    width: 50px;
+    height: 50px;
+}
+
+.mobile>ul>li>i {
+    color: whitesmoke;
+    font-size: 25px;
+}
+
 @media (min-width: 768px) {
+    .container-width {
+        max-width: 75%;
+        margin: auto;
+    }
+
     header {
         background-color: rgb(18, 18, 18);
         height: 120px;
@@ -79,11 +113,42 @@ header {
         height: 100%;
         padding: 15px 0;
     }
+
     .header img {
         width: 90px;
         height: 100%;
     }
+
+    .navigation {
+        background-color: red;
+        font-family: "Open Sans", "Bokor", serif;
+    }
+
+    .menu-destop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .nav .menu-destop {
+        gap: 10px;
+        display: flex;
+    }
+
+    .nav ul li {
+        padding: 10px 15px;
+    }
+
+    .nav ul li:first-child {
+        background-color: blue;
+    }
+
+    .nav ul li a {
+        color: white;
+    }
+
 }
-@media(min-width: 1024px){
-    
-}
+
+@media(min-width: 1024px) {}
