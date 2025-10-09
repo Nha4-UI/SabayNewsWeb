@@ -170,32 +170,88 @@ header {
     .grid-hero {
         margin-top: 15px;
         display: grid;
-        grid-template-rows: 300px 300px;
-        grid-template-columns: 45% auto auto;
+        grid-template-rows: 250px 250px;
+        grid-template-columns: 42% 32% auto;
 
     }
 
-    .hero-items {
-        background-color: red;
+    .hero-items-1 {
+        background-image: url("https://cdn.sabay.com/cdn/media.sabay.com/media/Rith.file/filenew/68c8ee2b16a58_1757998620_small.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        object-fit: cover;
+        background-position: center;
+    }
+
+    .hero-items-2 {
+        background-image: url("https://cdn.sabay.com/cdn/media.sabay.com/media/Rith.file/fileSpec/68c3e5e8839aa_1757668800_small.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        object-fit: cover;
+        background-position: center;
     }
 
     .hero-items-3-top {
-        width: 98%;
-        height: 99%;
-        background-color: lightblue;
+        width: 97.5%;
+        height: 98.5%;
+        background-color: rgb(213, 215, 216);
         padding: 5px;
-        margin-bottom: 1%;
-        margin-left: 2%;
+        margin-bottom: 1.5%;
+        margin-left: 2.5%;
+    }
+
+    .hero-items-4 {
+        background-image: url("https://cdn.sabay.com/cdn/media.sabay.com/media/Rith.file/fileSpec/68c3d53b39744_1757664540_small.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        object-fit: cover;
+        background-position: center;
+    }
+
+    .hero-items-5 {
+        background-image: url("https://cdn.sabay.com/cdn/media.sabay.com/media/Rith.file/fileSpec/68c12cb3b869b_1757490300_small.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        object-fit: cover;
+        background-position: center;
     }
 
     .hero-items-6-top {
-        width: 98%;
-        height: 99%;
-        background-color: lightblue;
+        width: 97.5%;
+        height: 98.5%;
+        background-color: rgb(213, 215, 216);
         padding: 5px;
-        margin-top: 1%;
-        margin-left: 2%;
+        margin-top: 1.5%;
+        margin-left: 2.5%;
     }
+
+    .hero-hover:hover {
+        box-shadow: inset 0 -180px 120px rgba(5, 5, 5, 0.578);
+        cursor: pointer;
+    }
+
+    .grid-hero>div {
+        position: relative;
+    }
+
+    .hero-title {
+        position: absolute;
+        bottom: 20%;
+        color: whitesmoke;
+        font-weight: bold;
+        padding: 0 25px;
+    }
+
+    .date {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        padding: 15px 30px;
+        color: whitesmoke;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
 }
 
 @media(min-width: 1024px) {}
